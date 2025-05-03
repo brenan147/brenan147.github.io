@@ -14,7 +14,17 @@
             align-items: center;
             min-height: 100vh;
             padding-top: 40px;
-            padding-bottom: 40px;
+            padding-bottom: 60px;
+            position: relative;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+            justify-content: center; /* Centers the items horizontally */
+            gap: 30px; /* Adds some space between the product cards */
+            max-width: 1000px; /* Adjust as needed */
+            width: 95%;
+            margin-bottom: 30px;
         }
         .product-card {
             background-color: #fff;
@@ -22,9 +32,8 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             padding: 40px;
             text-align: center;
-            max-width: 500px;
-            width: 90%;
-            margin-bottom: 30px;
+            max-width: 450px; /* Slightly reduced max-width to accommodate side-by-side layout */
+            width: 100%; /* Ensures cards take full width within their container */
         }
         .product-image {
             max-width: 100%;
@@ -64,23 +73,37 @@
             margin-top: 25px;
             font-size: 0.95em;
         }
+        .footer-text {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: black;
+            font-size: 1em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="product-card">
-        <img src="airpods_gen4.jpeg" alt="Airpods Gen 4" class="product-image">
-        <h1 class="product-title">Airpods Gen 4</h1>
-        <p class="product-price">$40.00</p>
-        <a href="mailto:brenanja.hertenst@huttoisd.org?subject=Order%20for%20Airpods%20Gen%204&body=I%20would%20like%20to%20purchase%20the%20Airpods%20Gen%204%20for%20$%2440.00.%0APlease%20provide%20details%20on%20how%20to%20complete%20the%20purchase." class="buy-button">Buy Now</a>
-        <p class="tagline">Experience premium sound at an affordable price.</p>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="airpods_gen4.jpeg" alt="Airpods Gen 4" class="product-image">
+            <h1 class="product-title">Airpods Gen 4</h1>
+            <p class="product-price">$40.00</p>
+            <a href="mailto:brenanja.hertenst@huttoisd.org?subject=Order%20for%20Airpods%20Gen%204&body=I%20would%20like%20to%20purchase%20the%20Airpods%20Gen%204%20for%20%2440.00.%0APlease%20provide%20details%20on%20how%20to%20complete%20the%20purchase." class="buy-button">Buy Now</a>
+            <p class="tagline">Experience premium sound at an affordable price.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="choco_musk.jpeg" alt="Choco Musk Cologne" class="product-image">
+            <h1 class="product-title">Choco Musk Cologne</h1>
+            <p class="product-price">$9.00</p>
+            <a href="mailto:brenanja.hertenst@huttoisd.org?subject=Order%20for%20Choco%20Musk%20Cologne&body=I%20would%20like%20to%20buy%20the%20Choco%20Musk%20Cologne%20for%20%249.00." class="buy-button">Buy Now</a>
+            <p class="tagline">Indulge in the sweet and warm scent of Choco Musk.</p>
+        </div>
     </div>
-<div class="product-card">
-    <img src="choco_musk.jpeg" alt="Choco Musk Cologne" class="product-image">
-    <h1 class="product-title">Choco Musk Cologne</h1>
-    <p class="product-price">$9.00</p>
-    <a href="mailto:brenanja.hertenst@huttoisd.org?subject=Order%20for%20Choco%20Musk%20Cologne&body=I%20would%20like%20to%20buy%20the%20Choco%20Musk%20Cologne%20for%20%249.00." class="buy-button">Buy Now</a>
-    <p class="tagline">Indulge in the sweet and warm scent of Choco Musk.</p>
-</div>
+
     <div class="footer-text">I ONLY DO MEET UPS AT SCHOOL AND I ONLY DO CASH</div>
 </body>
 </html>
